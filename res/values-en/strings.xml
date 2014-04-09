@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart GPS</string>
+    <string name="title_activity_resultat">Smart GPS</string>
+    <string name="title_activity_mapa">Smart GPS</string>
+    <string name="title_activity_track_me">Smart GPS</string>
+    
+    <string name="dialogTitol">Wireless networks not enabled</string>
+    <string name="dialogMsg">Enable GPS or wireless networks in preferences screen</string>
+    <string name="dialogBotoSi">Go to preferences</string>
+    <string name="dialogBotoNo">Exit</string>
+    <string name="guardaPosicioCada">Save my position every</string>
+    <string name="segueixmeDurant">Follow me during</string>
+    <string name="minuts">minutes (1..99)</string>
+    <string name="botoAcceptar">OK</string>
+    <string name="errorEntradaUsuari">Minutes between 1 and 99</string>
+    
+    <string name="trackmeSeguint">Smart GPS is following you&#8230;</string>
+    <string name="botoCancelar">Cancel</string>
+    <string name="notiTitol">Smart GPS</string>
+    <string name="notiDescripcio">Check where you\'ve been</string>
+    <string name="notiStartDescripcio">Smart GPS is following you!</string>
+    
+    <string name="toesLesLocations">All positions</string>
+    <string name="noHiHaLocations">Didn\'t get new locations</string>
+    <string name="botoSortir">Exit</string>
+    <string name="textMapa">Smart GPS has followed you</string>
+    <string name="errorMapa">Error reading map</string>
+    <string name="markerMapa">TRACKED!</string>
+ 
+</resources>

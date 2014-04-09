@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        style="@style/label1"
+        android:text="@string/segueixmeDurant" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editSegueixme"
+            style="@style/edit1" >
+            <requestFocus />
+        </EditText>
+
+        <TextView style="@style/minuts" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/label1"
+        android:text="@string/guardaPosicioCada" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editGuarda"
+            style="@style/edit1" />
+
+        <TextView style="@style/minuts1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botoAcceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botoAcceptar" />
+    
+</LinearLayout>

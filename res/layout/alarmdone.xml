@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluegreenbg"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:gravity="center"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/donetext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake Up!"
+            android:textStyle="bold"
+            android:textColor="#E8C11A"
+            android:textSize="40sp"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:gravity="center"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/donetext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Have Reached Your Destination!"
+            android:textStyle="bold"
+            android:textColor="#E8C11A"
+            android:textSize="40sp"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="0.4">
+        
+        <Button
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:background="@drawable/setnewalarm"
+            android:layout_marginRight="10dp"
+            android:id="@+id/setanotheralarm"
+            android:text="Set New Alarm"
+            android:textColor="#F0CD2B"
+            android:textStyle="bold"
+            android:onClick="setAnotherAlarm"
+            tools:ignore="HardcodedText" />
+        
+        <Button
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:background="@drawable/setnewalarm"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/stopringtone"
+            android:text="Stop Alarm Tone"
+            android:textColor="#F0CD2B"
+            android:textStyle="bold"
+            android:onClick="setAnotherAlarm"
+            tools:ignore="HardcodedText" />
+        
+    </LinearLayout>
+
+</LinearLayout>

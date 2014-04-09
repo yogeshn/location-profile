@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.location.smartGPS"
+    android:versionCode="3"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  	 	<uses-feature android:name="android.hardware.location" android:required="true" />
+  	<uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.location.smartGPS.MainActivityold"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.location.smartGPS.SpalshScreenActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         
+        
+		 <activity
+            android:name="com.location.smartGPS.GPSSettingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    
+		 <activity
+            android:name="com.location.smartGPS.MainActivitynavigation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		 		 
+		          <activity
+            android:name="com.location.smartGPS.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		          
+		          
+		          <activity
+            android:name="com.location.smartGPS.LocAlarmActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		          
+		          
+		          <activity
+            android:name="com.location.smartGPS.pedometerActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		          
+		           <activity
+            android:name="com.location.smartGPS.SetAlarm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		           
+		           <activity
+            android:name="com.location.smartGPS.Alarm_map"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		          
+        <activity
+            android:name="com.location.smartGPS.LlistaLocationsActivity"
+            android:label="@string/title_activity_resultat" >
+        </activity>
+        <activity
+            android:name="com.location.smartGPS.MapaActivity"
+            android:label="@string/title_activity_mapa" >
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:name="com.location.smartGPS.TrackMeActivity"
+            android:label="@string/title_activity_track_me" >
+        </activity>
+    
+		 
+		 
+		 
+		 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC7cNnd9NuDy9QGYoiI-L9pqegHqVv7HN8" />
+
+        <activity
+            android:name="com.location.smartGPS.Gridactivity"
+            android:label="@string/title_activity_gridactivity" >
+            
+            
+        </activity>
+    </application>
+
+</manifest>

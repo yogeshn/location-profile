@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bluegreenbg"
+    android:orientation="vertical" 
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="0.8"
+        tools:ignore="UselessParent" >
+
+    	<LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent" 
+    		android:weightSum="1.0"
+        	android:orientation="vertical"
+        	android:layout_marginLeft="15dp"
+        	android:gravity="center_vertical"
+        	tools:ignore="UselessParent" >
+        
+       	 	<Button
+            	android:layout_width="85sp"
+         	   	android:layout_height="85sp"
+       			android:id="@+id/setdestbutton"
+       		    android:background="@drawable/setdestbutton"
+       		    android:textColor="#ffffff" />
+        
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="50dp"
+				android:src="@drawable/verticalline"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="0.2"
+				tools:ignore="ContentDescription" />
+        
+        	<Button
+            	android:layout_width="85sp"
+            	android:layout_height="85sp"
+        		android:id="@+id/settonebutton"
+       	    	android:background="@drawable/setringtonebutton"
+       	    	android:textColor="#ffffff" />
+        
+        	<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="50dp"
+				android:src="@drawable/verticalline"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="0.2"
+				tools:ignore="ContentDescription" />
+
+        	<Button
+        	    android:id="@+id/startthealarm"
+        	    android:layout_width="88sp"
+        	    android:layout_height="88sp"
+        	    android:background="@drawable/startalarmbutton"
+        	    android:textColor="#ffffff" />
+
+    	</LinearLayout>
+    
+    	<LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent" 
+        	android:orientation="vertical"
+        	android:layout_margin="10dp"
+        	android:gravity="center_horizontal"
+        	android:weightSum="3.0">
+
+        	<TextView
+           		android:id="@+id/destAddTextView"
+            	android:layout_weight="0.7"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:hint="@string/destinationAddress"
+            	android:textColorHint="#FFFFFF"
+            	android:textStyle="bold"
+            	android:gravity="center"
+            	android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        	<TextView
+            	android:id="@+id/setToneTextView"
+            	android:layout_weight="1.6"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="5dp"
+            	android:hint="@string/alarmToneName"
+            	android:textColorHint="#FFFFFF"
+            	android:textStyle="bold"
+            	android:gravity="center"
+            	android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        	<TextView
+    	    	android:id="@+id/endDistTextView"
+            	android:layout_weight="0.7"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:hint="@string/endDistance"
+            	android:textColorHint="#FFFFFF"
+            	android:textStyle="bold"
+            	android:gravity="center"
+            	android:textAppearance="?android:attr/textAppearanceMedium" />
+    	</LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:gravity="center_horizontal">
+        
+    </LinearLayout>
+</LinearLayout>

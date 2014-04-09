@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Smart GPS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="planets_array">
+        <item>Navigation</item>
+        <item android:id="@+id/item1" android:layout_height="wrap_content" android:layout_width="wrap_content">Pedometer</item>
+        <item android:id="@+id/item1" android:layout_height="wrap_content" android:layout_width="wrap_content">Track Me</item>
+        <item android:id="@+id/item1" android:layout_height="wrap_content" android:layout_width="wrap_content">Alarm</item>
+         
+        <item android:id="@+id/item1" android:layout_height="wrap_content" android:layout_width="wrap_content">Settings</item>
+        <item android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/item1">Help</item>
+        <item >About</item>
+    </string-array>
+
+    <string name="title_activity_gridactivity">Gridactivity</string>
+
+      <string name="app1_name">Smart GPS</string>
+    <string name="title_activity_resultat">Smart GPS</string>
+    <string name="title_activity_mapa">Smart GPS</string>
+    <string name="title_activity_track_me">Smart Gps</string>
+    
+    <string name="dialogTitol">Wireless networks disabled</string>
+    <string name="dialogMsg">Enable GPS or wireless networks to screen settings</string>
+    <string name="dialogBotoSi">Go to Preferences</string>
+    <string name="dialogBotoNo">Exit</string>
+    <string name="guardaPosicioCada">Guard every position</string>
+    <string name="segueixmeDurant">Follow me at</string>
+    <string name="minuts">minutes (1 .. 99)</string>
+    <string name="botoAcceptar">done</string>
+	<string name="errorEntradaUsuari">Please enter between 1 and 99 minutes</string>
+    
+    <string name="trackmeSeguint"> t\'is following&#8230;</string>
+    <string name="botoCancelar">Cancel</string>
+	<string name="notiTitol">Smart GPS</string>
+    <string name="notiDescripcio">you have to be consultation on</string>
+    <string name="notiStartDescripcio">Smart GPS t\'is following!</string>
+
+    <string name="toesLesLocations">All positions</string>
+    <string name="noHiHaLocations">I have obtained new positions</string>
+    <string name="botoSortir">exit</string>
+    <string name="textMapa">Smart GPS t\'has been following</string>
+    <string name="errorMapa">Error obtaining maps</string>
+    <string name="markerMapa">TRACKED!</string>
+    
+    
+    <string name="logoanddot">Logo and Dot</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="destination">Destination</string>
+    <string name="newalarm">New Alarm</string>
+    <string name="newalarmlabel">Set Alarm</string>
+    <string name="helptext">Help Text</string>
+    <string name="newalarmtext">New Alarm</string>
+    <string name="settingstext">Settings</string>
+    <string name="desttext">Destination Text</string>
+    <string name="addressbutton">Input Destination Address</string>
+ 	<string name="setdestbutton">Set Destination Button</string>
+ 	<string name="destinationAddress">Use Button to Set End Address</string>
+ 	<string name="alarmToneName">Use Button to Set Alarm Tone</string>
+ 	<string name="endDistance">Use Button to Set Alarm</string>
+ 	<string name="mappin">Map Pin Icon</string>
+ 	
+ 	
+ 	
+ 	
+ 	 <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="step_number">0</string>
+    <string name="step_number_label">Number of Steps</string>
+ 	
+ 	
+</resources>

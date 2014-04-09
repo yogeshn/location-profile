@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluegreenbg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+<TextView
+            android:id="@+id/logotitletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Smart GPS"
+            android:textSize="35sp"
+            android:textColorHint="#E8C11A"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Location Alarm"
+            android:textSize="35sp"
+            android:textColorHint="#E8C11A"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@+string/apptitle"
+            android:src="@drawable/localarmtitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.48"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/alarmclock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@+string/alarmclock"
+            android:src="@drawable/alarmclock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.35" >
+
+        <Button
+            android:id="@+id/setalarmbutton"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/buttontemplate"
+            android:contentDescription="@+string/setalarmbutton"
+            android:onClick="setAlarm"
+            android:text="SET ALARM"
+            android:textColor="#343439"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>
