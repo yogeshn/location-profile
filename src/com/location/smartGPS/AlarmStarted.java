@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationListener;
+import android.location.LocationManager;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -27,7 +28,8 @@ public class AlarmStarted extends Activity implements LocationListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.alarmstartedscreen);
-		
+		 LocationManager lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);  
+	       lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
 		Typeface font = Typeface.createFromAsset(getAssets(), "GeosansLight.ttf");
 		
 		textline1 = (TextView) findViewById(R.id.textline1);
@@ -38,6 +40,7 @@ public class AlarmStarted extends Activity implements LocationListener{
 		Intent it=this.getIntent();
 		la=it.getDoubleExtra("lat", 0.00);
 		lo=it.getDoubleExtra("long", 0.00);
+		Toast.makeText(this, ""+la+"lo"+lo, Toast.LENGTH_LONG).show();
 	}
 	
 	@Override
@@ -50,7 +53,8 @@ public class AlarmStarted extends Activity implements LocationListener{
 		double loc=location.getLongitude();
 		if (distance(lat, loc, la, lo) < 0.1) { // if distance < 0.1 miles we take locations as equal
 		       //do what you want to do...
-			
+			Intent i=new Intent(this,Alarmdone.class);
+			startActivity(i);
 		    }
 	}
 
