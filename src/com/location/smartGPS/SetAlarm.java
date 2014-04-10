@@ -40,7 +40,7 @@ public class SetAlarm extends Activity {
 	private String selectedTone;
 	private String endDistance;
 	private Integer wakeUpDistance = Integer.MIN_VALUE;
-	
+	Double lati,longi;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -62,32 +62,7 @@ public class SetAlarm extends Activity {
 		addbutton.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-			/*	AlertDialog.Builder addInput = new AlertDialog.Builder(SetAlarm.this);
-				final EditText addressText = new EditText(SetAlarm.this);
-				
-				addInput.setTitle("Enter Destination Address");
-				addInput.setView(addressText);
-				addInput.setPositiveButton("Submit", new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						destinationPoint = getDestPoint(addressText.getText().toString());
-						
-						if (destinationPoint == null){
-							Toast.makeText(getApplicationContext(), "Please Set Correct Destination", Toast.LENGTH_SHORT).show();
-						} else {
-							
-							destAddTextView.setText(destinationAddress);
-							if (destAddTextView.getText() != "--Address Not Found--")
-								addbutton.setBackgroundResource(R.drawable.setdestcheck);
-						}
-						dialog.dismiss();
-					}
-				});
-				addInput.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						dialog.dismiss(); 
-					}
-				});
-				addInput.show();*/
+			
 				
 				Intent i=new Intent(getApplicationContext(),Alarm_map.class);
 				startActivityForResult(i, 1);
@@ -137,13 +112,12 @@ public class SetAlarm extends Activity {
 				if (destinationAddress == null || destinationAddress == "--Address Not Found--" ){
 					Toast.makeText(getApplicationContext(), "Set Destination/End Distance", Toast.LENGTH_SHORT).show();
 				} else {
-					Calendar cal = Calendar.getInstance();
-				
-				
-					if (isMyServiceRunning()) {
-						Intent alarmStartActivity = new Intent(SetAlarm.this, AlarmStarted.class);
-						SetAlarm.this.startActivity(alarmStartActivity);
-					}
+					
+						Intent alarmStartActivity = new Intent(getApplicationContext(), AlarmStarted.class);
+						alarmStartActivity.putExtra("lat", lati);
+						alarmStartActivity.putExtra("long", longi);
+						startActivity(alarmStartActivity);
+					
 				}
 				
 				
@@ -159,8 +133,11 @@ public class SetAlarm extends Activity {
 
 		     if(resultCode == RESULT_OK){      
 		    	 String result=data.getStringExtra("addressString"); 
+		    	 longi=data.getDoubleExtra("lat", 0.00);
+		    	 lati=data.getDoubleExtra("longi", 0.00);
 		    		//	Toast.makeText(this, "location"+result, Toast.LENGTH_LONG).show();
 		    	        destAddTextView.setText(result);
+		    	        destinationAddress=result;
 		         
 		     }
 		}
@@ -188,15 +165,6 @@ public class SetAlarm extends Activity {
 	
 
 	
-	private boolean isMyServiceRunning() {
-	    ActivityManager manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
-	    for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
-	        if ("com.applaudingapps.ali.AlarmService".equals(service.service.getClassName())) {
-	            return true;
-	        }
-	    }
-	    return false;
-	}
 	
 	public boolean isInteger(String s) {
 	    try { 

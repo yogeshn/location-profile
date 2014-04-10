@@ -138,6 +138,17 @@
             android:name="com.location.smartGPS.LlistaLocationsActivity"
             android:label="@string/title_activity_resultat" >
         </activity>
+        
+         <activity
+            android:name="com.location.smartGPS.AlarmStarted"
+            android:label="@string/title_activity_resultat" >
+        </activity>
+        
+         <activity
+            android:name="com.location.smartGPS.Alarmdone"
+            android:label="@string/title_activity_resultat" >
+        </activity>
+        
         <activity
             android:name="com.location.smartGPS.MapaActivity"
             android:label="@string/title_activity_mapa" >

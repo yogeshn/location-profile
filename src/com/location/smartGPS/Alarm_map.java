@@ -81,6 +81,8 @@ public class Alarm_map extends Activity implements LocationListener , OnMapClick
          Intent i=new Intent();
          Bundle bundle = new Bundle();
         bundle.putString("addressString", addressString);
+        bundle.putDouble("lat", latpoint);
+        bundle.putDouble("longi", lngpoint);
      //   Toast.makeText(this,""+addressString, Toast.LENGTH_LONG).show();
         i.putExtras(bundle);
          setResult(RESULT_OK, i);

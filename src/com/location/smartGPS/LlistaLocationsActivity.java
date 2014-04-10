@@ -32,9 +32,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 	return true;
 }
 
-/*- ********************************************************************************** */
-/*- *********** PRIVATE ************* */
-/*- ********************************************************************************** */
+
 private void setList() {
 	final ArrayList<Parcelable> locations = getIntent().getExtras().getParcelableArrayList(PARAM_LOCATIONS);
 	final ListView list = (ListView) findViewById(R.id.listResultat);    
@@ -56,9 +54,7 @@ private void setList() {
 
 private void setEventHandlers() {}
 
-/*- ********************************************************************************** */
-/*- *********** PRIVATE ************* */
-/*- ********************************************************************************** */
+
 @SuppressLint("DefaultLocale")
 private List<String> locationsToText(ArrayList<Parcelable> locations) {
 	List<String> ret = new ArrayList<String>();

@@ -54,18 +54,6 @@
             android:layout_width="130sp"
             android:layout_height="40sp"
             android:background="@drawable/setnewalarm"
-            android:layout_marginRight="10dp"
-            android:id="@+id/setanotheralarm"
-            android:text="Set New Alarm"
-            android:textColor="#F0CD2B"
-            android:textStyle="bold"
-            android:onClick="setAnotherAlarm"
-            tools:ignore="HardcodedText" />
-        
-        <Button
-            android:layout_width="130sp"
-            android:layout_height="40sp"
-            android:background="@drawable/setnewalarm"
             android:layout_marginLeft="10dp"
             android:id="@+id/stopringtone"
             android:text="Stop Alarm Tone"
