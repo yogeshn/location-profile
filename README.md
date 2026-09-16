@@ -1,6 +1,6 @@
 # Smart GPS
 
-Smart GPS is an Android application that combines several location‑aware utilities into a single, lightweight app:
+Smart GPS is a legacy Android application that combines several location‑aware utilities into a single, lightweight app:
 
 - **Navigation / Map view** using Google Maps Android API v2
 - **Track Me** – periodic GPS logging and map markers
